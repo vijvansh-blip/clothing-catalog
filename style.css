@@ -1,60 +1,47 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0d0d0d;
+    font-family: Arial;
+    background: #111;
     color: white;
 }
 
 .title {
     text-align: center;
-    margin-top: 30px;
-    font-size: 32px;
+    padding: 20px;
 }
 
-/* GRID layout */
+/* GRID */
 .catalog {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-    padding: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
-/* Card */
+/* CARD */
 .item {
-    background: #1a1a1a;
-    padding: 15px;
-    border-radius: 15px;
-    text-align: center;
+    background: #1c1c1c;
+    border-radius: 12px;
+    padding: 10px;
     transition: 0.3s;
 }
 
 .item:hover {
-    transform: translateY(-8px);
-}
-
-/* Image */
-.item img {
-    width: 100%;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-
-.item img:hover {
     transform: scale(1.05);
 }
 
-/* Button */
-button {
-    margin-top: 10px;
-    padding: 8px 15px;
-    border: none;
-    background: white;
-    color: black;
-    border-radius: 8px;
-    cursor: pointer;
+.item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* TEXT */
+.price {
+    color: #00ff88;
     font-weight: bold;
 }
 
-button:hover {
-    background: #ddd;
+.fabric {
+    font-size: 12px;
+    color: gray;
 }
