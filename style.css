@@ -1,0 +1,30 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #111;
+    color: white;
+}
+
+.catalog {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.item {
+    background: #1c1c1c;
+    padding: 15px;
+    border-radius: 15px;
+    width: 220px;
+    transition: 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
